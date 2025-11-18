@@ -1,0 +1,84 @@
+{
+  "version": "2.0.0",
+  "options": {
+    "shell": {
+      "executable": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-Command"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "label": "Setup: pnpm install",
+      "type": "shell",
+      "command": "pnpm install --frozen-lockfile",
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend: lint (next lint)",
+      "type": "shell",
+      "command": "pnpm --dir frontend lint",
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend: type-check (tsc)",
+      "type": "shell",
+      "command": "pnpm --dir frontend type-check",
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend: tests (vitest)",
+      "type": "shell",
+      "command": "pnpm --dir frontend test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend: build (next build)",
+      "type": "shell",
+      "command": "pnpm --dir frontend build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend: format (check)",
+      "type": "shell",
+      "command": "pnpm --dir frontend format",
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend: format (write)",
+      "type": "shell",
+      "command": "pnpm --dir frontend format:fix",
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend: deps audit",
+      "type": "shell",
+      "command": "pnpm audit --prod",
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend: export preview",
+      "type": "shell",
+      "command": "pnpm --dir frontend dlx serve out -l 4173",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Verify (lint > build > audit)",
+      "dependsOn": [
+        "Frontend: lint (next lint)",
+        "Frontend: type-check (tsc)",
+        "Frontend: tests (vitest)",
+        "Frontend: build (next build)",
+        "Frontend: deps audit"
+      ],
+      "dependsOrder": "sequence"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "id": "n_01",
+      "slug": "backlinks",
+      "title": "Backlinks",
+      "tags": [
+        "links"
+      ]
+    },
+    {
+      "id": "n_02",
+      "slug": "bienvenida",
+      "title": "Bienvenida",
+      "tags": [
+        "meta"
+      ]
+    },
+    {
+      "id": "n_03",
+      "slug": "bloques",
+      "title": "Bloques",
+      "tags": [
+        "links"
+      ]
+    },
+    {
+      "id": "n_04",
+      "slug": "busqueda",
+      "title": "Búsqueda",
+      "tags": [
+        "meta",
+        "search"
+      ]
+    },
+    {
+      "id": "n_05",
+      "slug": "embeds",
+      "title": "Embeds",
+      "tags": []
+    },
+    {
+      "id": "n_06",
+      "slug": "grafo",
+      "title": "Grafo",
+      "tags": [
+        "graph",
+        "meta"
+      ]
+    },
+    {
+      "id": "n_07",
+      "slug": "markdown",
+      "title": "Markdown",
+      "tags": [
+        "syntax"
+      ]
+    },
+    {
+      "id": "n_08",
+      "slug": "propiedades",
+      "title": "Propiedades",
+      "tags": [
+        "meta"
+      ]
+    },
+    {
+      "id": "n_09",
+      "slug": "tareas",
+      "title": "Tareas",
+      "tags": [
+        "tasks"
+      ]
+    },
+    {
+      "id": "n_10",
+      "slug": "wikilinks",
+      "title": "Wikilinks",
+      "tags": [
+        "links"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n_01",
+      "target": "n_10",
+      "weight": 1
+    },
+    {
+      "source": "n_01",
+      "target": "n_06",
+      "weight": 1
+    },
+    {
+      "source": "n_02",
+      "target": "n_06",
+      "weight": 1
+    },
+    {
+      "source": "n_02",
+      "target": "n_07",
+      "weight": 1
+    },
+    {
+      "source": "n_03",
+      "target": "n_10",
+      "weight": 1
+    },
+    {
+      "source": "n_05",
+      "target": "n_07",
+      "weight": 1
+    },
+    {
+      "source": "n_06",
+      "target": "n_10",
+      "weight": 1
+    },
+    {
+      "source": "n_06",
+      "target": "n_01",
+      "weight": 1
+    },
+    {
+      "source": "n_06",
+      "target": "n_04",
+      "weight": 1
+    },
+    {
+      "source": "n_07",
+      "target": "n_10",
+      "weight": 1
+    },
+    {
+      "source": "n_08",
+      "target": "n_04",
+      "weight": 1
+    },
+    {
+      "source": "n_09",
+      "target": "n_07",
+      "weight": 1
+    },
+    {
+      "source": "n_09",
+      "target": "n_02",
+      "weight": 1
+    },
+    {
+      "source": "n_10",
+      "target": "n_03",
+      "weight": 1
+    }
+  ]
+}

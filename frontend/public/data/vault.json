@@ -1,0 +1,9 @@
+{
+  "name": "Vault Demo",
+  "defaultLang": "en",
+  "noteCount": 10,
+  "build": {
+    "version": "1.0.0",
+    "builtAt": "2025-11-18T18:02:07.262Z"
+  }
+}

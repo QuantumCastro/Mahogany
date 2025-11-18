@@ -1,0 +1,23 @@
+# Build artifacts
+build/
+dist/
+reports/
+*.log
+logs/
+
+
+# Node / frontend
+node_modules/
+.next/
+frontend/.next/
+frontend/node_modules/
+frontend/.generated/
+frontend/test-results/
+frontend/reports/
+frontend/out
+.turbo/
+*.tsbuildinfo
+
+# VS Code / workspace
+.vscode/*.code-workspace
+

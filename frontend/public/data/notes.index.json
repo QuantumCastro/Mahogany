@@ -1,0 +1,114 @@
+{
+  "items": [
+    {
+      "id": "n_01",
+      "slug": "backlinks",
+      "title": "Backlinks",
+      "tags": [
+        "links"
+      ],
+      "excerpt": "Esta nota enlaza a [[04-wikilinks]] y recibe enlaces de [[03-grafo]].",
+      "plainText": "Esta nota enlaza a [[04-wikilinks]] y recibe enlaces de [[03-grafo]].",
+      "updatedAt": "2025-11-07"
+    },
+    {
+      "id": "n_02",
+      "slug": "bienvenida",
+      "title": "Bienvenida",
+      "tags": [
+        "meta"
+      ],
+      "excerpt": "Bienvenido al vault demo. Revisa [[03-grafo]] y [[02-markdown]]. Este es un proyecto en curso.",
+      "plainText": "Bienvenido al vault demo. Revisa [[03-grafo]] y [[02-markdown]]. Este es un proyecto en curso.",
+      "updatedAt": "2025-11-07"
+    },
+    {
+      "id": "n_03",
+      "slug": "bloques",
+      "title": "Bloques",
+      "tags": [
+        "links"
+      ],
+      "excerpt": "Párrafo con id. Otra línea que enlaza a [[04-wikilinks#Seccion]].",
+      "plainText": "Párrafo con id. Otra línea que enlaza a [[04-wikilinks#Seccion]].",
+      "updatedAt": "2025-11-07"
+    },
+    {
+      "id": "n_04",
+      "slug": "busqueda",
+      "title": "Búsqueda",
+      "tags": [
+        "meta",
+        "search"
+      ],
+      "excerpt": "Consulta por tag #meta y frase exacta \"grafo conecta\". Usa -excluir para filtrar.",
+      "plainText": "Consulta por tag #meta y frase exacta \"grafo conecta\". Usa -excluir para filtrar.",
+      "updatedAt": "2025-11-07"
+    },
+    {
+      "id": "n_05",
+      "slug": "embeds",
+      "title": "Embeds",
+      "tags": [],
+      "excerpt": "![[02-markdown]] como inclusión. Imagen local: ![[assets/logo.png]]",
+      "plainText": "![[02-markdown]] como inclusión. Imagen local: ![[assets/logo.png]]",
+      "updatedAt": "2025-11-07"
+    },
+    {
+      "id": "n_06",
+      "slug": "grafo",
+      "title": "Grafo",
+      "tags": [
+        "graph",
+        "meta"
+      ],
+      "excerpt": "El grafo conecta [[04-wikilinks]] y [[05-backlinks]]. También referencia [[10-busqueda]].",
+      "plainText": "El grafo conecta [[04-wikilinks]] y [[05-backlinks]]. También referencia [[10-busqueda]].",
+      "updatedAt": "2025-11-07"
+    },
+    {
+      "id": "n_07",
+      "slug": "markdown",
+      "title": "Markdown",
+      "tags": [
+        "syntax"
+      ],
+      "excerpt": "Tabla mínima y callout. [!note] Esto es un callout. Usa tablas, listas y [[04-wikilinks]].",
+      "plainText": "Tabla mínima y callout. [!note] Esto es un callout. Usa tablas, listas y [[04-wikilinks]].",
+      "updatedAt": "2025-11-07"
+    },
+    {
+      "id": "n_08",
+      "slug": "propiedades",
+      "title": "Propiedades",
+      "tags": [
+        "meta"
+      ],
+      "excerpt": "Las Properties se muestran arriba. Ver [[10-busqueda]].",
+      "plainText": "Las Properties se muestran arriba. Ver [[10-busqueda]].",
+      "updatedAt": "2025-11-07"
+    },
+    {
+      "id": "n_09",
+      "slug": "tareas",
+      "title": "Tareas",
+      "tags": [
+        "tasks"
+      ],
+      "excerpt": "Abrir [[02-markdown]] Leer [[01-bienvenida]]",
+      "plainText": "Abrir [[02-markdown]] Leer [[01-bienvenida]]",
+      "updatedAt": "2025-11-07"
+    },
+    {
+      "id": "n_10",
+      "slug": "wikilinks",
+      "title": "Wikilinks",
+      "tags": [
+        "links"
+      ],
+      "excerpt": "Usa [[Nota#Seccion]] o [[Nota#^xyz]]. Ver [[06-bloques]]. Seccion Ejemplo de heading.",
+      "plainText": "Usa [[Nota#Seccion]] o [[Nota#^xyz]]. Ver [[06-bloques]]. Seccion Ejemplo de heading.",
+      "updatedAt": "2025-11-07"
+    }
+  ]
+}

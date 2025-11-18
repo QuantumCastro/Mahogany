@@ -1,0 +1,143 @@
+{
+  "edges": [
+    {
+      "source": "n_01",
+      "target": {
+        "type": "note",
+        "id": "n_10"
+      },
+      "kind": "link",
+      "isBroken": false
+    },
+    {
+      "source": "n_01",
+      "target": {
+        "type": "note",
+        "id": "n_06"
+      },
+      "kind": "link",
+      "isBroken": false
+    },
+    {
+      "source": "n_02",
+      "target": {
+        "type": "note",
+        "id": "n_06"
+      },
+      "kind": "link",
+      "isBroken": false
+    },
+    {
+      "source": "n_02",
+      "target": {
+        "type": "note",
+        "id": "n_07"
+      },
+      "kind": "link",
+      "isBroken": false
+    },
+    {
+      "source": "n_03",
+      "target": {
+        "type": "heading",
+        "id": "n_10",
+        "heading": "seccion"
+      },
+      "kind": "link",
+      "isBroken": false
+    },
+    {
+      "source": "n_05",
+      "target": {
+        "type": "note",
+        "id": "n_07"
+      },
+      "kind": "embed",
+      "isBroken": false
+    },
+    {
+      "source": "n_06",
+      "target": {
+        "type": "note",
+        "id": "n_10"
+      },
+      "kind": "link",
+      "isBroken": false
+    },
+    {
+      "source": "n_06",
+      "target": {
+        "type": "note",
+        "id": "n_01"
+      },
+      "kind": "link",
+      "isBroken": false
+    },
+    {
+      "source": "n_06",
+      "target": {
+        "type": "note",
+        "id": "n_04"
+      },
+      "kind": "link",
+      "isBroken": false
+    },
+    {
+      "source": "n_07",
+      "target": {
+        "type": "note",
+        "id": "n_10"
+      },
+      "kind": "link",
+      "isBroken": false
+    },
+    {
+      "source": "n_08",
+      "target": {
+        "type": "note",
+        "id": "n_04"
+      },
+      "kind": "link",
+      "isBroken": false
+    },
+    {
+      "source": "n_09",
+      "target": {
+        "type": "note",
+        "id": "n_07"
+      },
+      "kind": "link",
+      "isBroken": false
+    },
+    {
+      "source": "n_09",
+      "target": {
+        "type": "note",
+        "id": "n_02"
+      },
+      "kind": "link",
+      "isBroken": false
+    },
+    {
+      "source": "n_10",
+      "target": null,
+      "kind": "link",
+      "isBroken": true
+    },
+    {
+      "source": "n_10",
+      "target": null,
+      "kind": "link",
+      "isBroken": true
+    },
+    {
+      "source": "n_10",
+      "target": {
+        "type": "note",
+        "id": "n_03"
+      },
+      "kind": "link",
+      "isBroken": false
+    }
+  ]
+}
