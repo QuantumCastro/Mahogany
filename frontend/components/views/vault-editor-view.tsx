@@ -369,9 +369,9 @@ export function VaultEditorView({ vaultName, notes, noteContents }: VaultEditorV
               <div className="font-mono text-xs text-[#7aa2f7]">{t("home.editor.modeBadge")}</div>
             )}
           </div>
-          <div className="mt-6 flex flex-1 flex-col gap-4 overflow-hidden">
+          <div className="mt-6 flex flex-1 flex-col gap-4 overflow-visible md:overflow-hidden">
             {activeNote ? (
-              <article className="h-full overflow-hidden rounded-2xl border border-border bg-panel p-6">
+              <article className="h-auto rounded-2xl border border-border bg-panel p-4 md:h-full md:overflow-hidden md:p-6">
                 <header className="space-y-2">
                   <p className="text-xs font-semibold uppercase tracking-wide text-muted">
                     {t("home.editor.openedFrom")}
