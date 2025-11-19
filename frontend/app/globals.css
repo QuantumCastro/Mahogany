@@ -1,4 +1,4 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -38,12 +38,18 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   background: var(--surface);
   color: var(--foreground);
   font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .skip-link {
@@ -203,3 +209,4 @@ body.search-open footer {
   background: var(--editor-sidebar-active-bg);
   color: var(--editor-sidebar-active-text);
 }
+

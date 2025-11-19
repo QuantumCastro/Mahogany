@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import "./globals.css";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -46,7 +46,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
       </head>
       <body className="bg-surface font-sans text-foreground antialiased">
@@ -54,7 +54,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <SkipLink />
           <div className="flex min-h-screen flex-col">
             <SiteHeader vaultName={vaultInfo.name} noteCount={vaultInfo.noteCount} />
-            <main id="main" className="mx-auto w-full max-w-6xl flex-0 px-4 py-0">
+            <main id="main" className="mx-auto w-full max-w-6xl flex-1 px-4 py-6">
               {children}
             </main>
             <SiteFooter builtAt={vaultInfo.build.builtAt} version={vaultInfo.build.version} />
@@ -66,6 +66,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     </html>
   );
 }
+
 
 
 

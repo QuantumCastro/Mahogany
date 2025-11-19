@@ -268,9 +268,9 @@ export function VaultEditorView({ vaultName, notes, noteContents }: VaultEditorV
     return () => container.removeEventListener("click", handleClick);
   }, [openNoteInEditor, slugLookup]);
   return (
-    <div className="flex min-h-screen items-center justify-center bg-surface">
-      <div className="grid h-[90vh] w-[100vw] grid-cols-[260px,1fr] rounded-2xl border border-border bg-panel shadow-2xl">
-        <aside className="editor-sidebar flex min-h-0 flex-col border-r border-border">
+    <div className="flex min-h-screen justify-center bg-surface px-4 py-6 md:items-center">
+      <div className="flex w-full max-w-6xl flex-col gap-4 rounded-2xl border border-border bg-panel shadow-2xl md:h-[90vh] md:flex-row md:gap-0">
+        <aside className="editor-sidebar flex w-full min-h-0 flex-col border-b border-border max-h-[45vh] overflow-hidden md:w-72 md:max-h-full md:border-b-0 md:border-r md:overflow-visible">
           <div className="border-border/60 border-b px-4 py-4">
             <div className="flex items-end gap-3">
               <div className="flex-1">
