@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/1-logo.ico",         
     shortcut: "/1-logo.ico",
-  }
+  },
 };
 
 
@@ -46,6 +46,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
       </head>
       <body className="bg-surface font-sans text-foreground antialiased">
@@ -53,7 +54,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <SkipLink />
           <div className="flex min-h-screen flex-col">
             <SiteHeader vaultName={vaultInfo.name} noteCount={vaultInfo.noteCount} />
-            <main id="main" className="mx-auto w-full max-w-6x0 flex-0 px-4 py-0">
+            <main id="main" className="mx-auto w-full max-w-6xl flex-0 px-4 py-0">
               {children}
             </main>
             <SiteFooter builtAt={vaultInfo.build.builtAt} version={vaultInfo.build.version} />
@@ -65,3 +66,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     </html>
   );
 }
+
+
+
+

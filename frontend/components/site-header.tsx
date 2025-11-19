@@ -46,8 +46,8 @@ export function SiteHeader({ vaultName, noteCount }: SiteHeaderProps) {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-surface/95 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-2 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex items-center gap-3">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-2">
+        <div className="flex items-center gap-3 shrink-0">
           <Link href="/" className="text-lg font-semibold tracking-tight text-foreground">
             {displayName}
           </Link>
@@ -55,7 +55,7 @@ export function SiteHeader({ vaultName, noteCount }: SiteHeaderProps) {
             {noteCount} {t("header.noteLabel")}
           </span>
         </div>
-        <nav className="flex flex-wrap items-center gap-3 text-sm text-muted" aria-label="Main">
+        <nav className="flex flex-1 flex-wrap items-center justify-center gap-2 text-sm text-muted md:justify-start" aria-label="Main">
           {navItems.map((item, index) => {
             if (item.type === "action") {
               return (
@@ -84,7 +84,7 @@ export function SiteHeader({ vaultName, noteCount }: SiteHeaderProps) {
             );
           })}
         </nav>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 shrink-0">
           <ThemeToggle />
           <LanguageSwitcher />
         </div>
@@ -92,3 +92,5 @@ export function SiteHeader({ vaultName, noteCount }: SiteHeaderProps) {
     </header>
   );
 }
+
+
